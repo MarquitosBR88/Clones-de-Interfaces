@@ -1,5 +1,6 @@
 body {
-  background-color: #121212;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,21 +9,24 @@ body {
 }
 
 .container-login {
-  background-color: #1c1c1c;
-  border: solid 2px #2c2c2c;
-  border-radius: 8px;
-  padding: 2rem;
-  padding-bottom: 5%;
+  background-color: black;
+  border: solid 1px #2c2c2c;
+  border-radius: 2px;
+  padding: 20px;
+  padding-bottom: 2%;
   text-align: center;
   color: white;
   width: 25vw;
-  max-width: 400px;
+  max-width: 330px;
 }
 
 .login {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  max-width: 260px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .login p {
@@ -37,10 +41,11 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 1px;
   color: #aaa;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .separator hr {
@@ -48,22 +53,39 @@ button {
   border: none;
   height: 1px;
   background-color: #ccc;
+  max-width: 90px;
+  width: 100%;
 }
 
 .login-facebook {
-  color: #385185;
+  display: flex;
+  color: #3c8ae4;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.forgot-password {
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .container-cadastro {
   text-align: center;
-  background-color: #1c1c1c;
-  border: solid 2px #2c2c2c;
+  background-color: black;
+  border: solid 1px #2c2c2c;
   margin-top: 10px;
-  border-radius: 8px;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  border-radius: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 25vw;
-  max-width: 400px;
+  max-width: 330px;
+  color: white;
+  letter-spacing: -0.5px;
 }
 
 main {
@@ -90,4 +112,79 @@ footer {
 
 .footer-copy {
   margin-top: 5px;
+}
+
+.instagram-logo {
+  width: 200px;
+  align-self: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+input {
+  background-color: #1c1c1c;
+  padding: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  appearance: none;
+  background-clip: padding-box;
+  border: 1px solid gray;
+  border-radius: 2px;
+  outline: none; /* remove contorno azul padrão */
+  box-shadow: none; /* remove sombra interna */
+}
+
+input::placeholder {
+  font-size: 12px; /* tamanho da fonte */
+  color: #aaa; /* cor opcional */
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: #405de6;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.facebook-logo {
+  width: 23px;
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cadastro {
+  color: #0095f6;
+  font-weight: 500;
+}
+
+.cadastro:visited {
+  color: #2932b1;
+  font-weight: 500;
+}
+
+.cadastro:active {
+  color: #203746;
+  font-weight: 500;
+}
+
+footer,
+footer a {
+  color: gray;
+  font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline gray;
+}
+
+footer a:active {
+  color: rgb(48, 48, 48);
+  text-decoration: underline rgb(48, 48, 48);
 }
