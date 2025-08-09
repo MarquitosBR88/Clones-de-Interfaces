@@ -148,6 +148,17 @@ button {
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #2d3974;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .facebook-logo {
@@ -187,4 +198,27 @@ footer a:hover {
 footer a:active {
   color: rgb(48, 48, 48);
   text-decoration: underline rgb(48, 48, 48);
+}
+
+.input-senha {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-senha input {
+  flex: 1;
+}
+
+.input-senha button {
+  position: absolute;
+  background-color: #1c1c1c;
+  right: 8px;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.togglePassword:hover,
+.hidePassword:hover {
+  color: rgb(138, 138, 138);
 }
